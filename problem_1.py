@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-# YOUR FULL NAME
+# WU LUZIEN
 # UAG00098
 # Problem Set 3 - Problem 1
 # Description:
@@ -29,8 +29,16 @@ A soma dos números ímpares entre 15 e 12 é: 13
 
 
 def main():
-    pass  # your code here
+    X = int(input("Digite um valor inteiro para X: "))
+    Y = int(input("Digite um valor inteiro para Y: "))
+    if X > Y:
+       X, Y = Y, X
+      
+    soma = 0
+    for i in range(X + 1, Y):
+        if i % 2 == 1:
+            soma += i
 
-
+    print(f"A soma dos números ímpares entre {X} e {Y} é: {soma}")
 if __name__ == '__main__':
     main()
